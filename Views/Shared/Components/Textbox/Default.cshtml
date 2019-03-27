@@ -1,0 +1,5 @@
+@model MvCTests.Models.Components.Textbox.Textbox
+<div class="form-group">
+    <label>@Model.Label @(Model.IsRequired ? Html.Raw("<span class=\"text-danger\">*</span>") : Html.Raw(""))</label>
+    <input type="text" value="@Model.Value" id="@Model.Name" name="@Model.Name" />
+</div>
